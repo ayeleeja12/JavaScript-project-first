@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name: 'shirt',
+        price: 1080,
+
+        rating: {
+          stars: 4.5,
+          count: 87
+        },
+        fun: function function1(){
+          console.log(`function inside object`);
+        }
+      };
+
+
+      const product2 = {
+        name: 'shirt',
+        price: 1080,
+
+        rating: {
+          stars: 4.5,
+          count: 87
+        }
+      }
+
+      console.log(product);
+      console.log(product.name);
+       
+      product.name = 'socks'
+      console.log(product.name);
+
+      product.newProperty = true;
+      console.log(product);
+
+      delete product.newProperty; 
+      console.log(product);
+
+      console.log(product['delivery-option']);
+      console.log(product.rating.count);
+      console.log(product.fun());
+      console.log(JSON.stringify(product2));
+      console.log('hello'.toUpperCase());
+
+
+      const obj1 = {
+        name:'aliza'
+      }
+
+      const obj3= {
+        name:'aliza'
+      }
+
+      console.log(obj1);
+
+      const obj2 = obj1
+
+      console.log(obj1===obj2);
+      console.log(obj1===obj3);
+
+
+      const object5= {
+        message: 'I have a message', 
+        price: 799,
+        method(){
+          console.log('method');        }
+
+      }
+      //const message = object5.message;
+      const {message, price} = object5;
+
+      const object6= {
+        message: message, 
+        // method: function function1() {
+        //   console.log('method');
+        method(){
+          console.log('hello');
+        }
+        }
+    
+      console.log(object5);
+      console.log(object6);
+      console.log(object6.method());
+
+    </script>
+  </body>
+</html>
