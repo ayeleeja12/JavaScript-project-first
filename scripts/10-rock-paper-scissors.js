@@ -23,9 +23,9 @@ if(playerMove === `rock`){
 if(computerMove === `rock`){
   result = 'tie';
 } else if (computerMove === `Paper`){
-  result = 'you win';
-} else if (computerMove === 'Scissors'){
   result = 'you lose';
+} else if (computerMove === 'Scissors'){
+  result = 'you win';
 }
 
 }  else if(playerMove === `Paper` ) { 
